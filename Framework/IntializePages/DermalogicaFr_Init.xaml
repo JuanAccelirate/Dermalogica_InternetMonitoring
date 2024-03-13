@@ -1,0 +1,233 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DermalogicaFr_Init" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_urlPage" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:DermalogicaFr_Init.in_urlPage>
+    <InArgument x:TypeArguments="x:String" />
+  </this:DermalogicaFr_Init.in_urlPage>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1038,843</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>DermalogicaFr_Init_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="DermalogicaFr_Init" sap:VirtualizedContainerService.HintSize="512,676" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Découvrez Dermalogica : le meilleur des soins visage" sap:VirtualizedContainerService.HintSize="450,588" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="db1db75a-3a9a-4831-919b-639105bc2429" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,348" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'Dermalogica uses'" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Timeout="5" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Allow selection'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dermalogica.fr/" CvTextArea="937, 664, 147, 21" CvTextArgument="Allow selection" CvType="Text" DesignTimeRectangle="941, 662, 144, 25" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection' tag='BUTTON' type='' class='' aaname='Allow selection' check:innerText='Allow selection' /&gt;" Guid="c5aa4cf8-d0c1-4fa8-a023-c5a7f91257b6" InformativeScreenshot="16efcf523c0190e7ace205ef6524b198.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://dermalogica.fr/" DesignTimeRectangle="509, 476, 900, 352" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl id='cookieBannerContent' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='cookieBannerContent' tag='DIV' type='' class='banner-content' aaname='' check:innerText='dermalogica uses cookies&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;We use cookies to improve your experience on our site and to show you' /&gt;" Guid="928fe37d-38a3-4217-ae0e-90cd8e7ede7c" InformativeScreenshot="9488f7030faf5a6f52d1a2404609fdf8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <uix:NCheckState DisplayName="Check App State 'CCélineCéline says:Bien…'" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Timeout="5" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Discutez avec nous'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="about:srcdoc" CvElementArea="1767, 886, 95, 98" CvTextArea="1798, 918, 31, 30" CvType="Icon" DesignTimeRectangle="1771, 889, 90, 90" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='chat-button' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chat-button' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' type='' class='messenger-button-iframe-5ntve7 fade-in-up-appear-done fade-in-up-enter-done' aaname='Discutez avec nous' check:innerText='Discutez avec nous' /&gt;" Guid="e3b5a6c9-5895-4613-8327-9494f99babc7" ImageBase64="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" InformativeScreenshot="8320713b685df55a40e8cf6f172e13fa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="about:srcdoc" DesignTimeRectangle="1366, 563, 495, 276" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl id='chat-campaigns' tag='IFRAME' /&gt;&lt;webctrl aria-role='region' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chat-campaigns' tag='IFRAME' /&gt;&lt;webctrl aria-role='region' tag='DIV' type='' class='widget-md campaigns-iframe-a4hy9e' aaname='' check:innerText='C&amp;#xD;&amp;#xA;Céline&amp;#xD;&amp;#xA;Céline says:&amp;#xD;&amp;#xA;Bienvenue chez Dermalogica, comment pouvons-nous vous aider ?&amp;#xD;&amp;#xA;Cliquez pour' /&gt;" Guid="6cad18e8-d822-48b3-baeb-d92a05c64578" InformativeScreenshot="9325e5790bc0f3150d14ed283713e09c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <uix:NCheckState DisplayName="Check App State 'Votre exfoliant'" sap:VirtualizedContainerService.HintSize="954,544" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Timeout="5" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,327" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,239" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Esc)][u(hk)]" Version="V3" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://dermalogica.fr/" DesignTimeRectangle="526, 315, 1350, 702" DesignTimeScaleFactor="1.5" ElementType="Container" FullSelectorArgument="&lt;webctrl tabindex='-1' tag='FORM' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='FORM' type='' class='needsclick klaviyo-form klaviyo-form-version-cid_1 kl-private-reset-css-Xuajs1' aaname='' check:innerText='Votre exfoliant visage offert&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA; &amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;Recevez notre exfoliant best-seller Daily Microfoliant en format' /&gt;" Guid="5d455e5d-f444-4c52-a78b-1a340b1569bd" InformativeScreenshot="253b40087cdf529dff46621d443003da.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1931, -11, 1942, 1030" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAABZ0lEQVRYR+2WYXHDMAxGA6EQCmEQBmEQBmEIcmEwCIVQCIUwCIUwCNv3XNddXDm1nKQ/dtHd66WSbH92LMfdZmtY3/cn8VPBEJssa+p4E/DPBChxJ14tYsrI5J8vQMG9+BTnmDzFl/gQu9i2XYCczPbwJ8nDt3gTbQLkeBF0YiV7qO3jJkB/lhrcw0WAHlj2mne9NEnAkAWeRRLQsvRsNIQDzy19DAzOrrWCJaiQUG65ye9dySDA0+gQxyqacjgPrLYWQcAxc05hzjw35dWXoX5qD41T7P+hkZu1LbEJCAI85/4+jlE05XCoWW0tggBPFRzjOEVTjmdCQQDfACtYguW9uwfIRz+eioJ0ErZ+BxBT+74tkoD3LPAsLgIw/Zkzk1ZGAti9XK2sxLW4CcDkQMTcleAYrq2EsYCrKcCeaNmYiKcauDFb8RxbwNWUwKea2Uy9GmLcnlNp6pmVvLvCGzw82Fa2rvsFjOB3t4p+Nj0AAAAASUVORK5CYII=" InformativeScreenshot="35573138ade31835dc5b8b57da6933e4.jpg" Selector="&lt;html app='chrome.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" Title="Découvrez Dermalogica : le meilleur des soins visage" Url="[in_urlPage]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

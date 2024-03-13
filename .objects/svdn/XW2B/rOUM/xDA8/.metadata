@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'precleanse cleansing oil'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "xDA8crIYTEOeXjKFFB-OnQ",
+  "Reference": "D7GwD6-v9UeAqXz-yGJeAQ/xDA8crIYTEOeXjKFFB-OnQ",
+  "ParentRef": "D7GwD6-v9UeAqXz-yGJeAQ/rOUMAjqsqEq7L5pjXpGA3Q",
+  "Created": "2024-03-07T19:01:16.2740723Z",
+  "Updated": "2024-03-07T19:01:16.2740723Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

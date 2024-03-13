@@ -1,0 +1,14 @@
+﻿{
+  "Name": "For Each Size Product",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "eNg2zzdkMEezpdPKm6ZlGA",
+  "Reference": "D7GwD6-v9UeAqXz-yGJeAQ/eNg2zzdkMEezpdPKm6ZlGA",
+  "ParentRef": "D7GwD6-v9UeAqXz-yGJeAQ/rOUMAjqsqEq7L5pjXpGA3Q",
+  "Created": "2024-03-07T19:02:31.3647921Z",
+  "Updated": "2024-03-07T19:02:31.3647921Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

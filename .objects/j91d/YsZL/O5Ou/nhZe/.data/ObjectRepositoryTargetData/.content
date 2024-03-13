@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="s5NFvoOZ-k2Sh2aRpUt9aA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.lookfantastic.com/" CvElementArea="629, 499, 682, 64" CvType="InputBox" DesignTimeRectangle="632, 501, 678, 60" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='sessionSettings_shippingCountrySelect' aaname='' /&gt;" Guid="3ad9b6ad-981d-4f21-a8c7-f115f45782fe" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="630, 465, 136, 27" CvTextArgument="Shipping to" CvType="Text" DesignTimeRectangle="632, 465, 678, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='popup' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='popup' tag='SPAN' type='' class='sessionSettings_shippingCountryLabel' aaname='Shipping to' check:innerText='Shipping to' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f63fcf327156f0061f5dda639f8d29e9.png" xmlns="">0t1gEFP5Hm0W2gomE0N69KQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

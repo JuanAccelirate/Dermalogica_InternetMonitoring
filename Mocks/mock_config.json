@@ -1,0 +1,16 @@
+{
+  "mockedWorkflows": [
+    {
+      "mockFilePath": "Mocks\\Framework\\Kr_Pages\\blivakker_mock.xaml",
+      "sourceWorkflowPath": "Framework\\Kr_Pages\\blivakker.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Framework\\USD_Pages\\Dermalogica_mock.xaml",
+      "sourceWorkflowPath": "Framework\\USD_Pages\\Dermalogica.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Framework\\GBP_Pages\\lookfantastic_mock.xaml",
+      "sourceWorkflowPath": "Framework\\GBP_Pages\\lookfantastic.xaml"
+    }
+  ]
+}

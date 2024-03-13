@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="i8gWfIJH1UKk47fX1FPaRw" Reference="D7GwD6-v9UeAqXz-yGJeAQ/rOUMAjqsqEq7L5pjXpGA3Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="fJR88kWBUUqasPTy2LiNjw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKVSURBVFhH7ZffT9NQFMfHq/4/Pupf4B+wVXxy7STqVrIZFiMgYqKgqOCUIAg4o4EYjUY06oP/gIkPBoVME0MIEcUH9WEddjve055x7e29221nwguf5GRt7znfc9b7s4k9otLdnd+fsrIHjUxv2jDtPs/YNT7DNnL773QlLftwyrKXmDmGZYPMsA190Bdj/NAOSWXsA4aZeytL2NJYDMaSTDySZrbA/tEfaQINw9iUlcuTXDRY4KhMNI6hFsnqgf9cJtSJab8J7Lc4r/1YrghjN2cCNnyltNPudYfGmOiKNeCYFc+PgsiXtfWgH9PGHH4qCTh9AgERTKsAZjRF5eAcFgNEKw6NQGm6DDP3FuEG++1j995zzQIwB6UL4q9w6kUG+3Tj6yZJB1lb34Cp+Qd0x1EU4Jjm4D5Ky0mmTx4SnZtWXnxMkmrq9TpdcWQFoOGyTWk53toucS4MXATXDYsjmNR1XboLoyrAyGTTlJbjbSoS56VXb0iOU3UcGJ+ah6M9eTiS6YVzI+Ow+X2LWjnKAlguSstRFbBS+UxynIdPX4T8JlhBItEKYK9F5owiIldv3Qn5nRm+TK2cSF2gGoQfViskx3n07GXIb3LuPrVyVAVIB6FqGj55/prkOLVaDabLC3Di9AAcz5+Fa5Oz8PPXb2rlyApQTkMEFwkx4FRxCGrb2yQZDUUB8oUIUS3FE7fvSuf5v1SrDl1xZAW0XIoZys1o8NJ1+Lj6CRqNBsn74P3ySsUbhN+2fgTs3fvloE67zQhptx1jn18YK/nbLfvtKfRL/URDTe0jGh4eZCKdWOSj2a4eyZpg1a26o515rz3uobQJ9lusUxKL0e5zDXbvw0SEf5qxvQM3MDR2jc+UK9weShKJvwZqMTcT+QOUAAAAAElFTkSuQmCC" Reference="D7GwD6-v9UeAqXz-yGJeAQ/rOUMAjqsqEq7L5pjXpGA3Q" Selector="&lt;html app='chrome.exe' title='Dermalogica*' /&gt;" Title="Dermalogica® Skin Care | Official Site" Url="[in_urlPage]">
+      <imageRef attrName="InformativeScreenshot" originalValue="11e4ff28a38a5945d8558e6e0d85e7c2.jpg" xmlns="">0LOk5N2SLwUaTOUidsKPxKg</imageRef>
+    </TargetApp>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="in_urlPage" />
+    </scg:List>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AABNf7u8ekexEMEIFwWbmA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.dermalogica.com/pages/search-results-page?q=PreCleanse" CvTextArea="261, 915, 244, 24" CvTextArgument="precleanse cleansing oil" CvType="Text" DesignTimeRectangle="225, 712, 319, 29" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='snize-title' parentid='snize-product-*' tag='SPAN' aaname='{0}*' /&gt;&quot;, productName)]" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl class='snize-title' parentid='snize-product-*' tag='SPAN' aaname='{0}*' type='' /&gt;&quot;, productName)]" Guid="ce69e52f-4189-4b56-a3a9-47b3bd02148a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* - Dermalogica' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0eeb5508ccb19997349b269bdde281ec.png" xmlns="">0z_Dh0A3pG0eixpbBppVmug</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="productName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,149 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CleanCache" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1184,1247" sap2010:WorkflowViewState.IdRef="CleanCache_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sma="clr-namespace:System.Management.Automation;assembly=System.Management.Automation" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CleanCache" sap:VirtualizedContainerService.HintSize="512,1182" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="inetcpl.cpl" DisplayName="Invoke Power Shell" sap:VirtualizedContainerService.HintSize="450,119" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_1" PowerShellProcess="PowerShellCore">
+      <ui:InvokePowerShell.Parameters>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+      </ui:InvokePowerShell.Parameters>
+      <ui:InvokePowerShell.PowerShellVariables>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokePowerShell.PowerShellVariables>
+    </ui:InvokePowerShell>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Propiedades: Internet" sap:VirtualizedContainerService.HintSize="450,975" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="76b5d9cd-4189-461b-b019-6a544f8d8731" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,661" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Eliminar...'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="76b5d9cd-4189-461b-b019-6a544f8d8731" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="207, 143, 88, 23" CvTextArea="224, 149, 49, 11" CvTextArgument="Eliminar..." CvType="Button" DesignTimeRectangle="207, 143, 87, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd cls='#32770' title='General' /&gt;&lt;wnd title='&amp;amp;Eliminar...' aaname='Eliminar...' aastate='enfocable' cls='Button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='#32770' title='General' /&gt;&lt;wnd title='&amp;amp;Eliminar...' aaname='Eliminar...' aastate='enfocable' cls='Button' check:text='&amp;amp;Eliminar...' /&gt;" Guid="7e769dd2-233a-44fc-a19f-84a4abd71983" InformativeScreenshot="704582aab080d81b6ea49b33a521f79a.png" ScopeSelectorArgument="&lt;wnd app='rundll32.exe' cls='#32770' title='Propiedades: Internet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="30, 89, 113, 14" CvTextArgument="Historial de exploracion" CvType="Text" DesignTimeRectangle="32, 89, 113, 15" ElementType="Text" FullSelectorArgument="&lt;wnd cls='#32770' title='General' /&gt;&lt;wnd cls='Static' title='Historial de exploración' /&gt;" FuzzySelectorArgument="&lt;wnd cls='#32770' title='General' /&gt;&lt;wnd cls='Static' title='Historial de exploración' check:text='Historial de exploración' /&gt;" ImageBase64="" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Eli&amp;minar'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="76b5d9cd-4189-461b-b019-6a544f8d8731" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="194, 437, 89, 26" CvTextArea="217, 443, 39, 12" CvTextArgument="Eliminar" CvType="Button" DesignTimeRectangle="194, 437, 89, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd title='Eli&amp;amp;minar' aaname='Eliminar' cls='Button' /&gt;" FuzzySelectorArgument="&lt;wnd title='Eli&amp;amp;minar' aaname='Eliminar' cls='Button' check:text='Eli&amp;amp;minar' /&gt;" Guid="395f9ade-538a-47d9-bb0e-56093df28c74" InformativeScreenshot="042a607fca52591217e4e90668f20bc4.png" ScopeSelectorArgument="&lt;wnd app='rundll32.exe' cls='#32770' title='Eliminar el historial de exploración' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cerrar'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="76b5d9cd-4189-461b-b019-6a544f8d8731" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="605, 8, 28, 28" CvType="CloseButton" DesignTimeRectangle="583, 3, 70, 44" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Cerrar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cerrar' role='push button' automationid='' check:text='Cerrar' /&gt;" Guid="00f9ae4e-e975-4302-be94-82b1ea89a2ae" InformativeScreenshot="9a290c9b84f5b3e2815f185eddae101f.png" ScopeSelectorArgument="&lt;wnd app='rundll32.exe' cls='#32770' title='Propiedades: Internet' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="235, 256, 444, 586" FilePath="C:\Windows\System32\rundll32.exe" IconBase64="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" InformativeScreenshot="4932eb6978520904fd0790a247518aaa.png" Selector="&lt;wnd app='rundll32.exe' cls='#32770' title='Propiedades: Internet' /&gt;" Title="Propiedades: Internet" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

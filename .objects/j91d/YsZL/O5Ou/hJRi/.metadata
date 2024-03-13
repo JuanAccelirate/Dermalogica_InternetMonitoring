@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Country'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "hJRiJpAD8U2ypFdayjjYHw",
+  "Reference": "D7GwD6-v9UeAqXz-yGJeAQ/hJRiJpAD8U2ypFdayjjYHw",
+  "ParentRef": "D7GwD6-v9UeAqXz-yGJeAQ/O5OuLWXSf0y3rsEyecZgMA",
+  "Created": "2024-03-07T18:55:11.435689Z",
+  "Updated": "2024-03-07T18:55:11.435689Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

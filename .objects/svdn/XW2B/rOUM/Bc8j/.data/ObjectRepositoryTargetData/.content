@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MfC_wgHw2EmW18LP9qzfjw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.dermalogica.com/pages/search-results-page?q=PreCleanse" DesignTimeRectangle="1245, 357, 27, 27" DesignTimeScaleFactor="1.5" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='                         ' aria-role='presentation' parentid='shopify-section-header' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                         ' aria-role='presentation' parentid='shopify-section-header' tag='svg' type='' class='icon icon-search' /&gt;" Guid="e840c1b1-595b-436f-94cd-7ce0320c3544" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PreCleanse - Dermalogica' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="577, 338, 714, 67" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='Search-In-Modal' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Search-In-Modal' tag='INPUT' type='search' class='search__input field__input snize-input-style' placeholder='what are you looking for?' aaname='what are you looking for?' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f6a1a73968e6ccc242edfa3f8f3b1b00.png" xmlns="">0zkoilHJ36kWgNlGHQzlcqQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

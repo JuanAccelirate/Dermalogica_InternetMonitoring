@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5hb7LLVpC0asPOM-O8dUNQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.lookfantastic.com/" CvElementArea="629, 738, 683, 65" CvType="InputBox" DesignTimeRectangle="632, 741, 678, 60" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl class='sessionSettings_currencySelect' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='sessionSettings_currencySelect' tag='SELECT' type='' aaname='' /&gt;" Guid="f077754b-e4d8-4be2-a399-b8c84ecc9324" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="628, 705, 132, 22" CvTextArgument="Currencies" CvType="Text" DesignTimeRectangle="632, 705, 678, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl class='sessionSettings_currencyLabel' parentid='popup' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='sessionSettings_currencyLabel' parentid='popup' tag='SPAN' type='' aaname='Currencies' check:innerText='Currencies' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7dedeb0b555e42b4af269eb065cf7386.png" xmlns="">0d9uYxhvTCk6jSH_7GJEdJA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

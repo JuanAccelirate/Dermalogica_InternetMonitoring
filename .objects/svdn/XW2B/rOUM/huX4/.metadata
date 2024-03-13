@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Type Into 'what are'",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "huX4QSnG00aiaXx8BaW07A",
+  "Reference": "D7GwD6-v9UeAqXz-yGJeAQ/huX4QSnG00aiaXx8BaW07A",
+  "ParentRef": "D7GwD6-v9UeAqXz-yGJeAQ/rOUMAjqsqEq7L5pjXpGA3Q",
+  "Created": "2024-03-07T19:00:13.1436887Z",
+  "Updated": "2024-03-07T19:00:13.1436887Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

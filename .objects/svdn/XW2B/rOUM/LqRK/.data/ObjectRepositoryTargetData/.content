@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FyYR5SL6QEWM_SAL4pObmQ" Reference="D7GwD6-v9UeAqXz-yGJeAQ/LqRKpnoxCkCYbcUjeqQOXQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.dermalogica.com/" CvTextArea="795, 514, 391, 24" CvTextArgument="Sorry, nothing found for precleanse balm." CvType="Text" DesignTimeRectangle="340, 319, 1263, 53" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl class='snize-nothing-found-text' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='snize-nothing-found-text' tag='DIV' type='' /&gt;" Guid="089510d2-a691-4502-b9fc-5ab1ef3c5824" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Dermalogica*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="be8f59296f179729f8e90ff3c620f3ef.png" xmlns="">0vczGG9Yx2EO441ntVrC52A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

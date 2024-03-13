@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Check App State 'Sorry, nothing'",
+  "Type": "Element",
+  "Id": "LqRKpnoxCkCYbcUjeqQOXQ",
+  "Reference": "D7GwD6-v9UeAqXz-yGJeAQ/LqRKpnoxCkCYbcUjeqQOXQ",
+  "ParentRef": "D7GwD6-v9UeAqXz-yGJeAQ/rOUMAjqsqEq7L5pjXpGA3Q",
+  "Created": "2024-03-07T19:00:52.9795237Z",
+  "Updated": "2024-03-07T19:00:52.9795237Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

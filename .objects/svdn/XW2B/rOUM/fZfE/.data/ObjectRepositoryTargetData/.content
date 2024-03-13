@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HgwzPaUjNkSDsWWcFSF8uw" Reference="D7GwD6-v9UeAqXz-yGJeAQ/fZfEM5hWM0ahca0yx35M-A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.dermalogica.com/products/precleanse?variant=36070284460184" CvTextArea="1102, 616, 106, 31" CvType="AnyWordGroup" DesignTimeRectangle="1106, 533, 103, 45" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='SPAN' class='price-item price-item--regular' parentid='price-template--*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' class='price-item price-item--regular' parentid='price-template--*' type='' /&gt;" Guid="f69aa3d6-c660-4c9c-9700-d69cc43f4b33" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Dermalogica*' url='https://www.dermalogica.*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4dc11c2d646bc3cbfdf6b1a77d2bd079.png" xmlns="">04QQMK4fmgkKl32LhE5eHyg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

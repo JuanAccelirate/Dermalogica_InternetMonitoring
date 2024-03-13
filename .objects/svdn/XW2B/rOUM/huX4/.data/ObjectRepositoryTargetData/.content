@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bww71ZUpQ0y0fsZav9N40g" Reference="D7GwD6-v9UeAqXz-yGJeAQ/huX4QSnG00aiaXx8BaW07A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.dermalogica.com/" CvTextArea="604, 348, 184, 15" CvTextArgument="what are you looking for?" CvType="Text" DesignTimeRectangle="614, 202, 714, 67" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='Search-In-Modal' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Search-In-Modal' tag='INPUT' type='search' class='search__input field__input snize-input-style' /&gt;" Guid="dba558fb-94a0-42a6-a864-3d053137e045" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Dermalogica*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bb9830519bee7f6b9ca5058b9395fe25.png" xmlns="">0Gt9128dozEiVqUxk4nnNEA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

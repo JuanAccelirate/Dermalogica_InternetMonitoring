@@ -1,0 +1,14 @@
+﻿{
+  "Name": "LookFantastic",
+  "Type": "App",
+  "Id": "j91d79nKb0-bmYn3ou20Nw",
+  "Reference": "D7GwD6-v9UeAqXz-yGJeAQ/j91d79nKb0-bmYn3ou20Nw",
+  "Created": "2024-03-07T18:53:32.3258504Z",
+  "Updated": "2024-03-07T18:54:14.2272969Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,290 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="lookfantastic_SelectCountry" this:lookfantastic_SelectCountry.in_currency="GBP" this:lookfantastic_SelectCountry.in_urlPage="https://www.lookfantastic.com/" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_currency" Type="InArgument(x:String)" />
+    <x:Property Name="in_urlPage" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>598,2517</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>lookfantastic_SelectCountry_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="lookfantastic_SelectCountry" sap:VirtualizedContainerService.HintSize="608,2452" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="LookFantastic_Options" sap:VirtualizedContainerService.HintSize="546,2364" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="512,2124" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="currentUrl" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="450,65" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Country''" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" ContentHash="grCHWLo_x0GPDbKAgXqmoQ" CvTextArea="1665, 300, 95, 19" CvTextArgument="en - GBP" CvType="Text" DesignTimeRectangle="1618, 270, 170, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' parentclass='responsiveSubMenu_rightSection' parentid='nav' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' parentclass='responsiveSubMenu_rightSection' parentid='nav' type='button' /&gt;" Guid="6aee0858-880c-4400-a758-258b90c57a88" InformativeScreenshot="d78923ec2b2245beb30dbaa334f7dd10.png" Reference="D7GwD6-v9UeAqXz-yGJeAQ/hJRiJpAD8U2ypFdayjjYHw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <If Condition="[in_currency = &quot;GBP&quot;]" sap:VirtualizedContainerService.HintSize="450,1285" sap2010:WorkflowViewState.IdRef="If_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,523" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NSelectItem DisplayName="Select Item 'Shipping to'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="United Kingdom" ScopeIdentifier="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Version="V3">
+                    <uix:NSelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="50">
+                        <x:String>United Kingdom</x:String>
+                        <x:String>Albania</x:String>
+                        <x:String>Algeria</x:String>
+                        <x:String>American Samoa</x:String>
+                        <x:String>Andorra</x:String>
+                        <x:String>Angola</x:String>
+                        <x:String>Anguilla</x:String>
+                        <x:String>Antarctica</x:String>
+                        <x:String>Antigua and Barbuda</x:String>
+                        <x:String>Argentina</x:String>
+                        <x:String>Armenia</x:String>
+                        <x:String>Aruba</x:String>
+                        <x:String>Australia</x:String>
+                        <x:String>Austria</x:String>
+                        <x:String>Azerbaijan</x:String>
+                        <x:String>Bahamas</x:String>
+                        <x:String>Bahrain</x:String>
+                        <x:String>Bangladesh</x:String>
+                        <x:String>Barbados</x:String>
+                        <x:String>Belgium</x:String>
+                        <x:String>Belize</x:String>
+                        <x:String>Benin</x:String>
+                        <x:String>Bermuda</x:String>
+                        <x:String>Bhutan</x:String>
+                        <x:String>Bolivia</x:String>
+                        <x:String>Bosnia and Herzegovina</x:String>
+                        <x:String>Botswana</x:String>
+                        <x:String>Bouvet Island</x:String>
+                        <x:String>Brazil</x:String>
+                        <x:String>British Indian Ocean Territory</x:String>
+                        <x:String>Brunei Darussalam</x:String>
+                        <x:String>Bulgaria</x:String>
+                        <x:String>Burkina Faso</x:String>
+                        <x:String>Burundi</x:String>
+                        <x:String>Cambodia</x:String>
+                        <x:String>Cameroon</x:String>
+                        <x:String>Canada</x:String>
+                        <x:String>Cape Verde</x:String>
+                        <x:String>Cayman Islands</x:String>
+                        <x:String>Central African Republic</x:String>
+                        <x:String>Chad</x:String>
+                        <x:String>Chile</x:String>
+                        <x:String>China Mainland</x:String>
+                        <x:String>Christmas Island</x:String>
+                        <x:String>Cocos (Keeling) Islands</x:String>
+                        <x:String>Colombia</x:String>
+                        <x:String>Comoros</x:String>
+                        <x:String>Congo</x:String>
+                        <x:String>Congo, the Democratic Republic of the</x:String>
+                        <x:String>Cook Islands</x:String>
+                      </scg:List>
+                    </uix:NSelectItem.Items>
+                    <uix:NSelectItem.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/?settingsSaved=Y&amp;shippingcountry=GB&amp;switchcurrency=EUR&amp;countrySelected=Y" CvElementArea="629, 492, 683, 64" CvType="InputBox" DesignTimeRectangle="632, 494, 678, 60" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='sessionSettings_shippingCountrySelect' aaname='' /&gt;" Guid="a5e5b43a-86d2-41cd-be57-0b3c25095c1e" ImageBase64="" InformativeScreenshot="b71078237060fe60927ab20a1d4bcfe8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvTextArea="630, 459, 136, 27" CvTextArgument="Shipping to" CvType="Text" DesignTimeRectangle="632, 458, 678, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='popup' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='popup' tag='SPAN' type='' class='sessionSettings_shippingCountryLabel' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NSelectItem.Target>
+                  </uix:NSelectItem>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Currencies'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,241" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Text="£ GBP" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/?settingsSaved=Y&amp;shippingcountry=GB&amp;switchcurrency=GBP&amp;countrySelected=Y" CvElementArea="630, 732, 680, 64" CvType="InputBox" DesignTimeRectangle="632, 734, 678, 60" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl class='sessionSettings_currencySelect' tag='SELECT' isleaf='0' parentid='popup' /&gt;" FuzzySelectorArgument="&lt;webctrl class='sessionSettings_currencySelect' tag='SELECT' isleaf='0' parentid='popup' type='' aaname='' /&gt;" Guid="29c44f2c-85df-4972-b8cf-529e5d66b15e" InformativeScreenshot="949914a29bf5158271a17c18dca28a9e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - *' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvTextArea="628, 697, 132, 22" CvTextArgument="Currencies" CvType="Text" DesignTimeRectangle="632, 698, 678, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl class='sessionSettings_currencyLabel' parentid='popup' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='sessionSettings_currencyLabel' parentid='popup' tag='SPAN' type='' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,584" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Shipping to'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Text="FRANCE" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" CvElementArea="629, 499, 682, 64" CvType="InputBox" DesignTimeRectangle="632, 494, 678, 60" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='sessionSettings_shippingCountrySelect' aaname='' /&gt;" Guid="3ad9b6ad-981d-4f21-a8c7-f115f45782fe" ImageBase64="" InformativeScreenshot="90bd89f496fd73b2e158348d426b383d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="630, 465, 136, 27" CvTextArgument="Shipping to" CvType="Text" DesignTimeRectangle="632, 458, 678, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='popup' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='popup' tag='SPAN' type='' class='sessionSettings_shippingCountryLabel' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Currencies'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,241" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Text="€ EUR" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" CvElementArea="629, 738, 683, 65" CvType="InputBox" DesignTimeRectangle="632, 734, 678, 60" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl class='sessionSettings_currencySelect' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='sessionSettings_currencySelect' tag='SELECT' type='' aaname='' /&gt;" Guid="f077754b-e4d8-4be2-a399-b8c84ecc9324" ImageBase64="" InformativeScreenshot="5f8a9d5b6d2fb1af813f32e784e5c436.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="628, 705, 132, 22" CvTextArgument="Currencies" CvType="Text" DesignTimeRectangle="632, 698, 678, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl class='sessionSettings_currencyLabel' parentid='popup' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='sessionSettings_currencyLabel' parentid='popup' tag='SPAN' type='' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </Sequence>
+              </If.Else>
+            </If>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.fr/?countrySelected=Y" CvElementArea="630, 816, 679, 77" CvTextArea="889, 843, 160, 21" CvTextArgument="ENREGISTRER" CvType="Button" DesignTimeRectangle="632, 818, 678, 73" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='popup' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='popup' tag='BUTTON' type='' class='sessionSettings_saveButton js-sessionSettingsSave' /&gt;" Guid="39e15f16-5e46-4079-affe-d5668b814e9e" InformativeScreenshot="e2777d53874b8781fbc9178499f0524a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauté, Maquillage et Soins Capillaires' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NGetUrl CurrentUrl="[currentUrl]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="NGetUrl_2" Version="V3" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,168" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[currentUrl]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="8bcda57bfc59100774b47cc103fb36e4.jpg" Selector="&lt;html app='chrome.exe' title='LOOKFANTASTIC*' /&gt;" Title="LOOKFANTASTIC - Beauté, Maquillage et Soins Capillaires" Url="[in_urlPage]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

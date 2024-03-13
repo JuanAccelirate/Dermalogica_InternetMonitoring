@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="grCHWLo_x0GPDbKAgXqmoQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.lookfantastic.com/" CvTextArea="1665, 300, 95, 19" CvTextArgument="en - GBP" CvType="Text" DesignTimeRectangle="1618, 270, 170, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' parentclass='responsiveSubMenu_rightSection' parentid='nav' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' parentclass='responsiveSubMenu_rightSection' parentid='nav' type='button' /&gt;" Guid="6aee0858-880c-4400-a758-258b90c57a88" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d78923ec2b2245beb30dbaa334f7dd10.png" xmlns="">0DL5zP13KBUO_UMqHzDM9WQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

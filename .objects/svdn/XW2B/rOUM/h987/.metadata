@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Click 'to earn points'",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "h987GMUTakefpR9QK028vg",
+  "Reference": "D7GwD6-v9UeAqXz-yGJeAQ/h987GMUTakefpR9QK028vg",
+  "ParentRef": "D7GwD6-v9UeAqXz-yGJeAQ/rOUMAjqsqEq7L5pjXpGA3Q",
+  "Created": "2024-03-07T19:00:00.0847651Z",
+  "Updated": "2024-03-07T19:28:17.6209975Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "Name": "LookFantastic_Options",
+  "Type": "Screen",
+  "Id": "O5OuLWXSf0y3rsEyecZgMA",
+  "Reference": "D7GwD6-v9UeAqXz-yGJeAQ/O5OuLWXSf0y3rsEyecZgMA",
+  "ParentRef": "D7GwD6-v9UeAqXz-yGJeAQ/YsZL4YYREEu5CKxFaGscnw",
+  "Created": "2024-03-07T18:53:35.7726487Z",
+  "Updated": "2024-03-07T18:54:16.9467519Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
