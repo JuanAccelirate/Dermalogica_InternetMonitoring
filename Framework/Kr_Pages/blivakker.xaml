@@ -119,7 +119,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: BliVakker.no | Norges største skjønnhetsbutikk på nett" sap:VirtualizedContainerService.HintSize="1364,2922" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="e56a1bc1-2657-454e-9a57-ac41badb3d6f" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: Blivakker" sap:VirtualizedContainerService.HintSize="1364,2922" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="e56a1bc1-2657-454e-9a57-ac41badb3d6f" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -131,7 +131,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="1268,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e56a1bc1-2657-454e-9a57-ac41badb3d6f" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'on bar search" sap:VirtualizedContainerService.HintSize="1268,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e56a1bc1-2657-454e-9a57-ac41badb3d6f" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.blivakker.no/" CvTextArea="771, 402, 216, 22" CvTextArgument="Sok blant 23.201 produkter.." CvType="Text" DesignTimeRectangle="742, 382, 600, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='input-text-search js-product-search-trigger' /&gt;" Guid="c03da7af-8897-47f8-91bd-ca7136cc2705" InformativeScreenshot="b0554fe5b0a4766f7f309901b1befd50.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BliVakker.no | Norges største skjønnhetsbutikk på nett' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -142,13 +142,13 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1268,258" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="e56a1bc1-2657-454e-9a57-ac41badb3d6f" Text="[in_ProductName]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Bar search " EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1268,258" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="e56a1bc1-2657-454e-9a57-ac41badb3d6f" Text="[in_ProductName]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.blivakker.no/" CvTextArea="621, 390, 180, 28" CvTextArgument="Sok etter produkter" CvType="Text" DesignTimeRectangle="606, 369, 705, 68" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='product-search-input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='product-search-input' tag='INPUT' type='' class='js-product-search-input' aaname='' /&gt;" Guid="fe8fd3bc-6ba4-4aaa-913f-92e42880d9a2" InformativeScreenshot="bddfeb278d4d8d8fc8b18be41d916026.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BliVakker.no | Norges største skjønnhetsbutikk på nett' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1268,219" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V3" />
-            <uix:NCheckState DisplayName="Check App State 'Ditt søk'" sap:VirtualizedContainerService.HintSize="1268,1631" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="e56a1bc1-2657-454e-9a57-ac41badb3d6f" Timeout="2" Version="V3">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts - Enter" sap:VirtualizedContainerService.HintSize="1268,219" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="e56a1bc1-2657-454e-9a57-ac41badb3d6f" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V3" />
+            <uix:NCheckState DisplayName="Check App Product List" sap:VirtualizedContainerService.HintSize="1268,1631" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="e56a1bc1-2657-454e-9a57-ac41badb3d6f" Timeout="2" Version="V3">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="718,1374" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
@@ -157,7 +157,7 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="656,1284" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e56a1bc1-2657-454e-9a57-ac41badb3d6f" Version="V3">
+                  <uix:NForEachUiElement DisplayName="For Each UI Element - Product" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="656,1284" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e56a1bc1-2657-454e-9a57-ac41badb3d6f" Version="V3">
                     <uix:NForEachUiElement.Body>
                       <ActivityAction x:TypeArguments="x:Int32">
                         <ActivityAction.Argument>
@@ -173,8 +173,8 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NGetText DisplayName="Get Text" sap:VirtualizedContainerService.HintSize="530,177" sap2010:WorkflowViewState.IdRef="NGetText_1" InUiElement="[CurrentElement]" TextString="[currentText]" Version="V3" />
-                          <Assign sap:VirtualizedContainerService.HintSize="530,122" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <uix:NGetText DisplayName="Get Text from Product" sap:VirtualizedContainerService.HintSize="530,177" sap2010:WorkflowViewState.IdRef="NGetText_1" InUiElement="[CurrentElement]" ScopeIdentifier="e56a1bc1-2657-454e-9a57-ac41badb3d6f" TextString="[currentText]" Version="V3" />
+                          <Assign DisplayName="Assign current shape" sap:VirtualizedContainerService.HintSize="530,122" sap2010:WorkflowViewState.IdRef="Assign_1">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Boolean">[bl_shapeContain]</OutArgument>
                             </Assign.To>
@@ -182,7 +182,7 @@
                               <InArgument x:TypeArguments="x:Boolean">[If(currentText.Contains(in_ProductSize), True,bl_shapeContain)]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <If Condition="[bl_shapeContain]" sap:VirtualizedContainerService.HintSize="530,608" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If Condition="[bl_shapeContain]" DisplayName="If current shape is true" sap:VirtualizedContainerService.HintSize="530,608" sap2010:WorkflowViewState.IdRef="If_1">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -196,7 +196,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                <Assign DisplayName="Assign Extract product price" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_2">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[out_ProductPrice]</OutArgument>
                                   </Assign.To>
@@ -215,7 +215,7 @@
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                <Assign DisplayName="Assign Product Price NA" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[out_ProductPrice]</OutArgument>
                                   </Assign.To>
@@ -259,7 +259,7 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign DisplayName="Assign Product Price NA" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_3">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_ProductPrice]</OutArgument>
                     </Assign.To>
@@ -272,20 +272,20 @@
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.blivakker.no/search?SearchTerm=PreCleanse%20Balm%20" CvTextArea="100, 708, 921, 31" CvTextArgument="Ditt sok etter &quot;PreCleanse Balm ga dessverre ingen treff" CvType="Text" DesignTimeRectangle="101, 290, 1716, 40" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='*ga dessverre ingen treff' /&gt;" Guid="3dea6d4e-4cd2-4c8e-9230-ad3a6d357e6c" InformativeScreenshot="4c07facad55e08ad458ff442187046db.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Søk | Norges største skjønnhetsbutikk på nett' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CvTextArea="315, 699, 22, 154" CvTextArgument="I" CvType="Text" DesignTimeRectangle="100, 532, 390, 390" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='product-list-container' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='product-list-container' tag='IMG' type='' class='' /&gt;" SearchSteps="FuzzySelector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NCheckState.Target>
             </uix:NCheckState>
-            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="1268,122" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[in_urlPage]" Version="V3" />
+            <uix:NGoToUrl DisplayName="Back to page" sap:VirtualizedContainerService.HintSize="1268,122" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[in_urlPage]" Version="V3" />
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1268,168" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[out_ProductPrice]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-1931, -11, 1942, 1030" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAnSURBVHhe7cEBDQAAAMKg909tDjcgAAAAAAAAAAAAAAAAAAAA4FwNQEAAAQtzTh0AAAAASUVORK5CYII=" InformativeScreenshot="930fd59c91320505ee8b3581fbb0cce2.jpg" Selector="&lt;html app='chrome.exe' title='BliVakker.no | Norges største skjønnhetsbutikk på nett' /&gt;" Title="BliVakker.no | Norges største skjønnhetsbutikk på nett" Url="https://www.blivakker.no/" />
+        <uix:TargetApp Area="-1931, -11, 1942, 1030" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAnSURBVHhe7cEBDQAAAMKg909tDjcgAAAAAAAAAAAAAAAAAAAA4FwNQEAAAQtzTh0AAAAASUVORK5CYII=" InformativeScreenshot="930fd59c91320505ee8b3581fbb0cce2.jpg" Selector="&lt;html app='chrome.exe' title='BliVakker.no | Norges største skjønnhetsbutikk på nett' /&gt;" Title="BliVakker.no | Norges største skjønnhetsbutikk på nett" Url="[in_urlPage]" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>

@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1184,649</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1184,1603</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DermalogicaDe_Init_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -106,25 +106,25 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DermalogicaDe_Init" sap:VirtualizedContainerService.HintSize="512,584" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DermalogicaDe_Init" sap:VirtualizedContainerService.HintSize="1112,1538" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: ⁣Dermalogica | Hautpflege auf Institutsniveau – Dermalogica DE" sap:VirtualizedContainerService.HintSize="450,496" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: Dermalogica DE" sap:VirtualizedContainerService.HintSize="1050,1450" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1210" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Cookies PopUp'" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Timeout="2" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Cookies PopUp'" sap:VirtualizedContainerService.HintSize="954,569" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Timeout="2" Version="V3">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
@@ -132,7 +132,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Auswahl erlauben'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click  on accept cookies" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://www.dermalogica.de/" CvTextArea="1026, 805, 118, 15" CvTextArgument="Auswahl. erlauben" CvType="Text" DesignTimeRectangle="908, 793, 357, 41" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection' tag='A' type='' class='CybotCookiebotDialogBodyButton' aaname='Auswahl erlauben ' check:innerText='Auswahl erlauben' /&gt;" Guid="7116eb3b-d2f5-4d38-b161-607559121f8a" InformativeScreenshot="210ef5589317d8d910738a741ae8452f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='⁣Dermalogica | Hautpflege auf Institutsniveau – Dermalogica DE' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                     </uix:NClick.Target>
@@ -153,12 +153,12 @@
               </uix:NCheckState.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NCheckState DisplayName="Check App State 'Sichere Dir'" sap:VirtualizedContainerService.HintSize="354,77" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Timeout="3" Version="V3">
+            <uix:NCheckState DisplayName="Check App Products PopUp" sap:VirtualizedContainerService.HintSize="954,554" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Timeout="3" Version="V3">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
@@ -166,7 +166,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sichere Dir'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on close button" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://www.dermalogica.de/" CvElementArea="1232, 270, 56, 59" CvType="CloseButton" DesignTimeRectangle="1240, 278, 43, 43" DesignTimeScaleFactor="1.5" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg&amp;gt;circle' tag='circle' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='circle' class='' aaname='' /&gt;" Guid="8e1cd64f-a3c1-4ca2-8a5d-1ad5e9f8fa52" InformativeScreenshot="01535775e93ab46c0ab0e8bcd90819ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='⁣Dermalogica | Hautpflege auf Institutsniveau – Dermalogica DE' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -193,7 +193,7 @@
               </uix:NCheckState.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>

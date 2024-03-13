@@ -111,7 +111,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: SkinStore: Skin Care, Makeup, Hair &amp; Beauty Products" sap:VirtualizedContainerService.HintSize="546,1337" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="d9ee0377-221d-46f2-a401-068247495ef4" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: Skinstore" sap:VirtualizedContainerService.HintSize="546,1337" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="d9ee0377-221d-46f2-a401-068247495ef4" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -129,12 +129,12 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'en - GBP Change'" sap:VirtualizedContainerService.HintSize="388,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9ee0377-221d-46f2-a401-068247495ef4" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Select country" sap:VirtualizedContainerService.HintSize="388,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9ee0377-221d-46f2-a401-068247495ef4" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" CvTextArea="1665, 300, 95, 19" CvTextArgument="en - GBP" CvType="Text" DesignTimeRectangle="1626, 270, 162, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='responsiveSubMenu_sessionSettings sessionSettings_button js-sessionSettingsButton sessionSettings_button-active' /&gt;" Guid="6aee0858-880c-4400-a758-258b90c57a88" ImageBase64="" InformativeScreenshot="7d33cca6cb3590e466ebf40c6edcd48a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Shipping to'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,258" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d9ee0377-221d-46f2-a401-068247495ef4" Text="FRANCE" Version="V3">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Select Country" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,258" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d9ee0377-221d-46f2-a401-068247495ef4" Text="FRANCE" Version="V3">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" CvElementArea="629, 499, 682, 64" CvType="InputBox" DesignTimeRectangle="632, 501, 678, 60" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='sessionSettings_shippingCountrySelect' aaname='' /&gt;" Guid="3ad9b6ad-981d-4f21-a8c7-f115f45782fe" InformativeScreenshot="f63fcf327156f0061f5dda639f8d29e9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>

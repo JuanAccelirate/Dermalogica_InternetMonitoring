@@ -17,7 +17,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1184,2654</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1184,2656</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>lookfantastic_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -124,7 +124,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="lookfantastic" sap:VirtualizedContainerService.HintSize="814,2589" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="lookfantastic" sap:VirtualizedContainerService.HintSize="814,2591" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="bl_shapeContain" />
       <Variable x:TypeArguments="ui:UiElement" Name="correctElement" />
@@ -136,20 +136,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp; Haircare" sap:VirtualizedContainerService.HintSize="752,2501" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" OutUiElement="[ui_lookFantastic]" ScopeGuid="c24376a9-712b-4ece-a952-0b8fc81d48c7" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: Lookfantastic" sap:VirtualizedContainerService.HintSize="752,2503" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" OutUiElement="[ui_lookFantastic]" ScopeGuid="c24376a9-712b-4ece-a952-0b8fc81d48c7" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="718,2261" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="718,2263" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="656,65" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-            <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" sap:VirtualizedContainerService.HintSize="656,127" sap2010:WorkflowViewState.IdRef="Activate_1">
+            <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Activate lookfantastic page" sap:VirtualizedContainerService.HintSize="656,127" sap2010:WorkflowViewState.IdRef="Activate_1">
               <ui:Activate.Target>
                 <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[ui_lookFantastic]" Id="fb2cc13e-25f5-4758-a5ab-a30dbb162b1b">
                   <ui:Target.TimeoutMS>
@@ -161,17 +161,17 @@
                 </ui:Target>
               </ui:Activate.Target>
             </ui:Activate>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT header-search-inp…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="656,258" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c24376a9-712b-4ece-a952-0b8fc81d48c7" Text="[in_ProductName]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Search bar" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="656,258" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c24376a9-712b-4ece-a952-0b8fc81d48c7" Text="[in_ProductName]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" CvTextArea="582, 378, 370, 24" CvTextArgument="Search for a product or brand..." CvType="Text" DesignTimeRectangle="572, 361, 660, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='header-search-input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='header-search-input' tag='INPUT' type='text' class='headerSearch_input ' /&gt;" Guid="459d6759-aacb-489f-9e98-ad8e7e11c3a7" ImageBase64="" InformativeScreenshot="f81fd92f75fcc96f5e2511eb95843b8a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="656,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c24376a9-712b-4ece-a952-0b8fc81d48c7" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Search icon" sap:VirtualizedContainerService.HintSize="656,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c24376a9-712b-4ece-a952-0b8fc81d48c7" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" CvElementArea="1177, 369, 44, 44" CvType="Icon" DesignTimeRectangle="1182, 373, 36, 36" DesignTimeScaleFactor="1.5" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='                                ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;button&amp;gt;svg' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                ' type='' tag='svg' class='headerSearch_spyglass ' /&gt;" Guid="8b336b36-9f16-4a90-8357-c0e63a9435b1" InformativeScreenshot="eaf556b7b391496d2d0f905236ef3ffa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <Assign sap:VirtualizedContainerService.HintSize="656,122" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign DisplayName="Assign shape false" sap:VirtualizedContainerService.HintSize="656,122" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Boolean">[bl_shapeContain]</OutArgument>
               </Assign.To>
@@ -179,7 +179,7 @@
                 <InArgument x:TypeArguments="x:Boolean">False</InArgument>
               </Assign.Value>
             </Assign>
-            <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="656,1300" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="c24376a9-712b-4ece-a952-0b8fc81d48c7" Version="V3">
+            <uix:NForEachUiElement DisplayName="For Each UI Element in productList" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="656,1300" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="c24376a9-712b-4ece-a952-0b8fc81d48c7" Version="V3">
               <uix:NForEachUiElement.Body>
                 <ActivityAction x:TypeArguments="x:Int32">
                   <ActivityAction.Argument>
@@ -194,8 +194,8 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get Text" sap:VirtualizedContainerService.HintSize="530,177" sap2010:WorkflowViewState.IdRef="NGetText_1" InUiElement="[CurrentElement]" TextString="[currentText]" Version="V3" />
-                    <Assign sap:VirtualizedContainerService.HintSize="530,122" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <uix:NGetText DisplayName="Get Text from Product" sap:VirtualizedContainerService.HintSize="530,177" sap2010:WorkflowViewState.IdRef="NGetText_1" InUiElement="[CurrentElement]" TextString="[currentText]" Version="V3" />
+                    <Assign DisplayName="Assign shape of Product" sap:VirtualizedContainerService.HintSize="530,122" sap2010:WorkflowViewState.IdRef="Assign_1">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Boolean">[bl_shapeContain]</OutArgument>
                       </Assign.To>
@@ -203,7 +203,7 @@
                         <InArgument x:TypeArguments="x:Boolean">[If(currentText.Contains(in_ProductShape), True,bl_shapeContain)]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <If Condition="[bl_shapeContain]" sap:VirtualizedContainerService.HintSize="530,609" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If Condition="[bl_shapeContain]" DisplayName="If contain the shape" sap:VirtualizedContainerService.HintSize="530,609" sap2010:WorkflowViewState.IdRef="If_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -217,7 +217,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,123" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign DisplayName="Assign product price according currency" sap:VirtualizedContainerService.HintSize="434,123" sap2010:WorkflowViewState.IdRef="Assign_3">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[out_ProductPrice]</OutArgument>
                             </Assign.To>
@@ -238,7 +238,7 @@ System.Text.RegularExpressions.Regex.Match(currentText,"\d{1,}[\,\.]\d{1,}(?=.*\
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign DisplayName="Assign product Price" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[out_ProductPrice]</OutArgument>
                             </Assign.To>
