@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1184,4961</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1184,6079</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Dermalogica_de_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -122,7 +122,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Dermalogica_de" sap:VirtualizedContainerService.HintSize="910,4896" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Dermalogica_de" sap:VirtualizedContainerService.HintSize="910,6014" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="correctProduct" />
       <Variable x:TypeArguments="ui:UiElement" Name="ui_dermalogica_de" />
@@ -137,13 +137,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Dermalogica DE" sap:VirtualizedContainerService.HintSize="848,4808" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" OutUiElement="[ui_dermalogica_de]" ScopeGuid="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V2" WindowResize="Maximize">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="848,181" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Extracting product price for DermalogicaDE&quot;]" />
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Dermalogica DE" sap:VirtualizedContainerService.HintSize="848,5581" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" OutUiElement="[ui_dermalogica_de]" ScopeGuid="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="814,4568" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="814,5324" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="ui_products" />
             </Sequence.Variables>
@@ -167,26 +168,70 @@
             </ui:Activate>
             <uix:NCheckState DisplayName="Check Pop up products" sap:VirtualizedContainerService.HintSize="752,92" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,294" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,475" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,183" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Pop up products inscription&quot;]" />
                   <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,204" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Esc)][u(hk)]" Version="V3" />
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,256" sap2010:WorkflowViewState.IdRef="Sequence_14">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Does not appears Pop up inscription&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.dermalogica.de/" DesignTimeRectangle="621, 304, 675, 681" DesignTimeScaleFactor="1.5" ElementType="Container" FullSelectorArgument="&lt;webctrl tabindex='-1' tag='FORM' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='-1' tag='FORM' type='' class='needsclick klaviyo-form klaviyo-form-version-cid_1 kl-private-reset-css-Xuajs1' aaname='' /&gt;" Guid="78d96895-b73e-4c6c-855e-c65c1df64e3a" InformativeScreenshot="df511a0e44d615f0b3527f880955542a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='⁣Dermalogica | Hautpflege auf Institutsniveau – Dermalogica DE' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <uix:NCheckState DisplayName="Check App State Pop up Chat" sap:VirtualizedContainerService.HintSize="752,92" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,453" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,183" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Appears chat pop up&quot;]" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="about:blank" CvElementArea="1806, 747, 41, 40" CvType="CloseButton" DesignTimeRectangle="1816, 755, 24, 24" DesignTimeScaleFactor="1.5" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;iframe' tag='IFRAME' /&gt;&lt;webctrl tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl tag='svg' type='' class='umm-frame-11g4mt0 e13lhb5m0' aaname='' /&gt;" Guid="3c7c4dd8-3f14-435e-b1bf-0a0afbad4663" InformativeScreenshot="a32cdb74707532b0fa2bbf72f9792f4f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='⁣Dermalogica | Hautpflege auf Institutsniveau – Dermalogica DE' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="1436, 737, 422, 117" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;iframe' tag='IFRAME' /&gt;&lt;webctrl aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aria-role='button' tag='DIV' type='' class='umm-frame-10688nk' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,256" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Does not appear pop up chat&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="about:blank" DesignTimeRectangle="1461, 737, 422, 117" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;iframe' tag='IFRAME' /&gt;&lt;webctrl aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aria-role='button' tag='DIV' type='' class='umm-frame-10688nk' aaname='' /&gt;" Guid="caf0cc26-968d-4620-9da9-b910cf51f9cc" InformativeScreenshot="996a1cb47a58c910f26216f8c47ea999.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='⁣Dermalogica | Hautpflege auf Institutsniveau – Dermalogica DE' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
               </uix:NCheckState.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -219,20 +264,58 @@
                 <InArgument x:TypeArguments="x:String">[in_ProductName.ToLower().Trim]</InArgument>
               </Assign.Value>
             </Assign>
-            <uix:NForEachUiElement DelayBefore="5" DisplayName="For Each UI Element - Product" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="752,1354" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
+            <If Condition="[productName.ToLower.Contains(&quot;clean&quot;)]" sap:VirtualizedContainerService.HintSize="752,543" sap2010:WorkflowViewState.IdRef="If_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Cleanser" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.dermalogica.de/products/precleanse-special-cleansing-gel#4acb/fullscreen/product/m=and&amp;q=Multi-active+toner" CvElementArea="91, 578, 32, 32" CvTextArea="135, 582, 355, 19" CvTextArgument="Cleanser 3" CvType="CheckBox" DesignTimeRectangle="83, 569, 420, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='df-hook-results-jAMb-' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='df-hook-results-jAMb-' tag='BUTTON' type='button' class=' dfd-btn-term-filter ' aaname='* Cleanser*' /&gt;" Guid="d3183483-e540-4d3d-ac7b-cd4610525a45" InformativeScreenshot="263b1820906acbf1121e3d7d6c30b227.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='⁣Precleanse + Special Cleansing Gel – Dermalogica DE' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="135, 582, 87, 19" CvTextArgument="Cleanser" CvType="Text" DesignTimeRectangle="137, 577, 84, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Cleanser' parentid='df-hook-results-jAMb-' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cleanser' parentid='df-hook-results-jAMb-' tag='SPAN' type='' class='' check:innerText='Cleanser' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <uix:NForEachUiElement DelayBefore="5" DisplayName="For Each UI Element - Product" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="752,888" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
               <uix:NForEachUiElement.Body>
                 <ActivityAction x:TypeArguments="x:Int32">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1049" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,583" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get Text from Product" sap:VirtualizedContainerService.HintSize="530,177" sap2010:WorkflowViewState.IdRef="NGetText_1" InUiElement="[CurrentElement]" TextString="[ProductDescription]" Version="V3" />
-                    <If Condition="[ProductDescription.ToLower.Contains(productName)]" DisplayName="If Product Description contain Product Name" sap:VirtualizedContainerService.HintSize="530,785" sap2010:WorkflowViewState.IdRef="If_1">
+                    <uix:NGetText DisplayName="Get Text from Product" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="NGetText_1" InUiElement="[CurrentElement]" TextString="[ProductDescription]" Version="V3" />
+                    <If Condition="[ProductDescription.ToLower.Contains(productName)]" DisplayName="If Product Description contain Product Name" sap:VirtualizedContainerService.HintSize="450,319" sap2010:WorkflowViewState.IdRef="If_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -240,12 +323,14 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,432" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,78" sap2010:WorkflowViewState.IdRef="Sequence_8">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Product description contains Product&quot;]" />
                           <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on product" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="NClick_2" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" Version="V3" />
                           <Assign DisplayName="Assign product found" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_5">
                             <Assign.To>
@@ -259,13 +344,14 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,78" sap2010:WorkflowViewState.IdRef="Sequence_6">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Product Description does not contain product&quot;]" />
                           <Assign DisplayName="Assign outPrice is NA" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_2">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[out_ProductPrice]</OutArgument>
@@ -300,21 +386,22 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NForEachUiElement>
-            <If Condition="[correctProduct]" sap:VirtualizedContainerService.HintSize="752,2159" sap2010:WorkflowViewState.IdRef="If_3">
+            <If Condition="[correctProduct]" DisplayName="If it is the correct product" sap:VirtualizedContainerService.HintSize="752,2748" sap2010:WorkflowViewState.IdRef="If_3">
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="718,1791" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="718,2380" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NForEachUiElement DisplayName="For Each UI Element 'For Each Size Product'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='label' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="656,1706" sap2010:WorkflowViewState.IdRef="NForEachUiElement_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="656,183" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Choose the correct size&quot;]" />
+                  <uix:NForEachUiElement DisplayName="For Each UI Element 'For Each Size Product'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='label' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="656,2112" sap2010:WorkflowViewState.IdRef="NForEachUiElement_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3">
                     <uix:NForEachUiElement.Body>
                       <ActivityAction x:TypeArguments="x:Int32">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1418" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1784" sap2010:WorkflowViewState.IdRef="Sequence_7">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -329,7 +416,7 @@
                               <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(currentSize,"[\d\.]+").ToString.Trim]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <If Condition="[currentSize.Trim = in_ProductSize.Trim]" DisplayName="If current size equal to ProductSize" sap:VirtualizedContainerService.HintSize="530,982" sap2010:WorkflowViewState.IdRef="If_2">
+                          <If Condition="[currentSize.Trim = in_ProductSize.Trim]" DisplayName="If current size equal to ProductSize" sap:VirtualizedContainerService.HintSize="530,1348" sap2010:WorkflowViewState.IdRef="If_2">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -337,12 +424,13 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,629" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,812" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Size found&quot;]" />
                                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on size" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="NClick_3" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" Version="V3" />
                                 <uix:NGetText DisplayName="Get Price product" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="f632dbe6-1304-4c17-9266-07f70352dac5" TextString="[out_ProductPrice]" Version="V3">
                                   <uix:NGetText.Target>
@@ -361,13 +449,14 @@
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,373" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Size not found&quot;]" />
                                 <Assign DisplayName="Assign Product Price" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[out_ProductPrice]</OutArgument>
@@ -423,7 +512,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <uix:NGoToUrl DisplayName="Back to page" sap:VirtualizedContainerService.HintSize="752,107" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[in_urlPage]" Version="V3" />
+            <uix:NGoToUrl DisplayName="Back to page" sap:VirtualizedContainerService.HintSize="752,105" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[in_urlPage]" Version="V3" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -431,5 +520,6 @@
         <uix:TargetApp Area="-1931, -11, 1942, 1030" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH0SURBVFhH7ZXPSwJBHMX7L8swOtSlDh261CnoEl0iSCvwUERBhwoSKoM6aIcikFDC3cxcs6hMLX+umua+Zrb1oDtjjWxE4YN32N03Xz773Z3v9PQ5ZPymuwD/D6DXITHNylJbCuANpXCXLpl8/Zhn5qktBQjd58BSsVxF3wK7C38RgBTiFPsxgKktBYfBFJSkiny5hkr1HblSFdFEEQeBNCY2b/Sc5QCjq2EE41loRiGeNE3D3kUSkpUAY2sRvBQqRonvqV5nowoD2JwSbkh7rZIwwNx+nCzjN75ACp7Ir9j1J3F0mcZTpkzu8vPCAKfhjLHUrKuHAoZc4aZ8v1OGJ5A0EmYJA3y+kVn0Zxtfj5jy1ANLMoqVmpFsljCAyimUU6tkrpvzDdPusCQMQL8xS+pbDTbOwULBlGfVSDZLGOCWDByepndipjz1yEoYtfe6kWqWMIAnkDKWmpXOVwiEQnKNo1bG+EYE10/s9lMJA0xuRvUfjif6hI7iu1RJH1baF7NSGID6mOxvq9QRgJ1sK7/Cnwetol1IZNnbtyMAahsZMKu+R2TI9munl+Ib5j1xuMlkpJ+u1R0DNGxflDHjjmH7PAGflMFZJAuv9Kpfz7pv9ec0N7gsY9h1xXRrzYa/BdDqdsNI1B0BWOkuQBfglwFkfAAqVlc1J3cXfgAAAABJRU5ErkJggg==" InformativeScreenshot="bc335b0c66186006f2a27604fcd419d4.jpg" Selector="&lt;html app='chrome.exe' title='⁣*Dermalogica*' /&gt;" Title="⁣Dermalogica | Hautpflege auf Institutsniveau – Dermalogica DE" Url="[in_urlPage]" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="848,164" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Product price: &quot;+out_ProductPrice]" />
   </Sequence>
 </Activity>

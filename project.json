@@ -103,14 +103,6 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "5c577319-a2c2-4235-b265-5f10a41ad5cc",
-        "dataVariationFilePath": ".variations\\Entry_ProductList_Sheet1.json",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Tests\\Lookfantastic_TestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
         "testCaseId": "357c69a1-8ab9-4386-84e3-cb7cceb4a1cd",
         "dataVariationFilePath": ".variations\\Entry_ProductList_Sheet1.json",
         "testCaseType": "TestCase",
@@ -147,6 +139,14 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Framework\\CreateReport_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6190484c-1288-4561-9ca8-aaa6372e1e0a",
+        "dataVariationFilePath": ".variations\\Entry_ProductList_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Framework\\GBP_Pages\\LookFantastic_TestCase.xaml"
       }
     ],
     "saveToCloud": false

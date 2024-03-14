@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Dermalogica_fr" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1184,741" sap2010:WorkflowViewState.IdRef="Dermalogica_fr_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Dermalogica_fr" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1184,922" sap2010:WorkflowViewState.IdRef="Dermalogica_fr_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -34,6 +34,7 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -87,34 +88,37 @@
       <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Dermalogica_fr" sap:VirtualizedContainerService.HintSize="512,676" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Dermalogica_fr" sap:VirtualizedContainerService.HintSize="1112,1515" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Dermalogica Fr" sap:VirtualizedContainerService.HintSize="450,588" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="db1db75a-3a9a-4831-919b-639105bc2429" Version="V2">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1050,181" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Clearing pop ups Dermalogica FR&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Dermalogica Fr" sap:VirtualizedContainerService.HintSize="1050,1246" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="db1db75a-3a9a-4831-919b-639105bc2429" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,348" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1006" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Dermalogica uses'" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Dermalogica uses'" sap:VirtualizedContainerService.HintSize="954,92" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,270" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,453" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,183" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Allow cookies&quot;]" />
                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Allow selection'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://dermalogica.fr/" CvTextArea="937, 664, 147, 21" CvTextArgument="Allow selection" CvType="Text" DesignTimeRectangle="941, 662, 144, 25" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection' tag='BUTTON' type='' class='' aaname='Allow selection' check:innerText='Allow selection' /&gt;" Guid="c5aa4cf8-d0c1-4fa8-a023-c5a7f91257b6" InformativeScreenshot="16efcf523c0190e7ace205ef6524b198.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
@@ -123,12 +127,13 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,256" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;not allow cookies&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
@@ -141,14 +146,15 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NCheckState DisplayName="Check App State 'CCélineCéline says:Bien…'" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'CCélineCéline says:Bien…'" sap:VirtualizedContainerService.HintSize="954,750" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,270" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,453" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,183" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Clearing chat pop up&quot;]" />
                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Discutez avec nous'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="about:srcdoc" CvElementArea="1767, 886, 95, 98" CvTextArea="1798, 918, 31, 30" CvType="Icon" DesignTimeRectangle="1771, 889, 90, 90" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='chat-button' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chat-button' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' type='' class='messenger-button-iframe-5ntve7 fade-in-up-appear-done fade-in-up-enter-done' aaname='Discutez avec nous' check:innerText='Discutez avec nous' /&gt;" Guid="e3b5a6c9-5895-4613-8327-9494f99babc7" ImageBase64="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" InformativeScreenshot="8320713b685df55a40e8cf6f172e13fa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
@@ -157,12 +163,13 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,256" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Without chat pop up&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
@@ -170,19 +177,20 @@
               </uix:NCheckState.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NCheckState DisplayName="Check App State 'Votre exfoliant'" sap:VirtualizedContainerService.HintSize="354,77" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Votre exfoliant'" sap:VirtualizedContainerService.HintSize="954,77" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,270" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,453" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,183" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Clearing product pop up&quot;]" />
                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CIRCLE'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db1db75a-3a9a-4831-919b-639105bc2429" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://dermalogica.fr/" CvElementArea="1816, 332, 40, 40" CvType="CloseButton" DesignTimeRectangle="1817, 332, 41, 41" DesignTimeScaleFactor="1.5" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg&amp;gt;circle' tag='circle' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl type='' tag='circle' class='' aaname='' /&gt;" Guid="b6909283-06d0-4149-9523-92c1c2bda3c5" InformativeScreenshot="546b1b6e5b5621056d844f303c48ae44.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Découvrez Dermalogica : le meilleur des soins visage' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
@@ -191,12 +199,13 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,256" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Without pop up products&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>

@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="LookFantastic_Init" this:LookFantastic_Init.in_urlPage="https://www.lookfantastic.com/" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="LookFantastic_Init" this:LookFantastic_Init.in_urlPage="https://www.lookfantastic.com/" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_urlPage" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1184,1563</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1184,2066</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>LookFantastic_Init_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -101,33 +101,35 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="LookFantastic_Init" sap:VirtualizedContainerService.HintSize="1112,1498" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="LookFantastic_Init" sap:VirtualizedContainerService.HintSize="1112,2001" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: Lookfantastic" sap:VirtualizedContainerService.HintSize="1050,1410" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="37702f6a-2d19-4a17-8c39-8f1462031005" Version="V2">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1050,181" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Openning lookFantastic&quot;]" />
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: Lookfantastic" sap:VirtualizedContainerService.HintSize="1050,1732" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="37702f6a-2d19-4a17-8c39-8f1462031005" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1170" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1492" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'cookies PopUP'" sap:VirtualizedContainerService.HintSize="954,569" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="37702f6a-2d19-4a17-8c39-8f1462031005" Timeout="5" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'cookies PopUP'" sap:VirtualizedContainerService.HintSize="954,710" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="37702f6a-2d19-4a17-8c39-8f1462031005" Timeout="5" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,453" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,183" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Cleaning cookies pop up&quot;]" />
                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'That's OK'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="37702f6a-2d19-4a17-8c39-8f1462031005" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" CvElementArea="1298, 677, 193, 69" CvTextArea="1345, 700, 97, 20" CvTextArgument="That's OK" CvType="Button" DesignTimeRectangle="1302, 681, 187, 62" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='onetrust-accept-btn-handler' tag='BUTTON' type='' class='' aaname='That&amp;apos;s OK' check:innerText='That&amp;apos;s OK' /&gt;" Guid="43f74f4b-1523-413d-bfd7-b57ebc5cba0b" InformativeScreenshot="3590c4704d5d22c9aad388efc15f9c88.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
@@ -136,16 +138,17 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,256" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;no cookies pop up&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" DesignTimeRectangle="106, 427, 1705, 567" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl class='ot-sdk-row' parentid='onetrust-banner-sdk' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ot-sdk-row' parentid='onetrust-banner-sdk' tag='DIV' type='' aaname='' check:innerText='Let’s Tailor Your Experience&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;We use cookies and similar technology to help give you the best' /&gt;" Guid="6d5f4d82-ab18-4b38-8ee9-864d33cfc42d" InformativeScreenshot="b18c551b1f51831c7754be7b0c746fd4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" DesignTimeRectangle="106, 457, 1717, 548" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl class='ot-sdk-row' parentid='onetrust-banner-sdk' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ot-sdk-row' parentid='onetrust-banner-sdk' tag='DIV' type='' aaname='' /&gt;" Guid="6d5f4d82-ab18-4b38-8ee9-864d33cfc42d" ImageBase64="" InformativeScreenshot="6b78cd2a0f402f1b2b4c3add3ac85981.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
               </uix:NCheckState.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -154,14 +157,15 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NCheckState DisplayName="Check App State 'Sign up Pop Up'" sap:VirtualizedContainerService.HintSize="954,514" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="37702f6a-2d19-4a17-8c39-8f1462031005" Timeout="5" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Sign up Pop Up'" sap:VirtualizedContainerService.HintSize="954,695" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="37702f6a-2d19-4a17-8c39-8f1462031005" Timeout="5" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,453" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,183" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Cleaning product pop up&quot;]" />
                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Close button" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="37702f6a-2d19-4a17-8c39-8f1462031005" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" CvElementArea="1418, 281, 37, 38" CvType="CloseButton" DesignTimeRectangle="1428, 289, 21, 22" DesignTimeScaleFactor="1.5" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='home' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='home' tag='path' type='' class='close-button' aaname='' /&gt;" Guid="d28476d5-d548-4dc1-8cee-85c03ab0f089" InformativeScreenshot="78c4beb9f8aba068de2c0c9bf7d3bf8d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
@@ -170,12 +174,13 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,256" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;No product pop up&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>

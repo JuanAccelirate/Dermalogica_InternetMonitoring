@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1184,2209</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1184,2883</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>lookfantastic_SelectCountry_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -104,21 +104,27 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="lookfantastic_SelectCountry" sap:VirtualizedContainerService.HintSize="608,2144" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="lookfantastic_SelectCountry" sap:VirtualizedContainerService.HintSize="608,2818" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="ui_lookfantastic" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="LookFantastic Select Country" sap:VirtualizedContainerService.HintSize="546,2056" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Version="V2" WindowResize="Maximize">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,181" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Starting select country for LookFantastic&quot;]" />
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="LookFantastic Select Country" sap:VirtualizedContainerService.HintSize="546,2549" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" OutUiElement="[ui_lookfantastic]" ScopeGuid="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="512,1816" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence sap:VirtualizedContainerService.HintSize="512,2309" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="currentUrl" />
             </Sequence.Variables>
@@ -129,6 +135,18 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="450,65" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Activate_1">
+              <ui:Activate.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[ui_lookfantastic]" Id="f51b4f3a-d66b-4396-a54f-e664723a46af">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Activate.Target>
+            </ui:Activate>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Select Country" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" ContentHash="grCHWLo_x0GPDbKAgXqmoQ" CvTextArea="1665, 300, 95, 19" CvTextArgument="en - GBP" CvType="Text" DesignTimeRectangle="1618, 270, 170, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' parentclass='responsiveSubMenu_rightSection' parentid='nav' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' parentclass='responsiveSubMenu_rightSection' parentid='nav' type='button' /&gt;" Guid="6aee0858-880c-4400-a758-258b90c57a88" InformativeScreenshot="d78923ec2b2245beb30dbaa334f7dd10.png" Reference="D7GwD6-v9UeAqXz-yGJeAQ/hJRiJpAD8U2ypFdayjjYHw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
@@ -140,7 +158,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <If Condition="[in_currency = &quot;GBP&quot;]" DisplayName="If currency is GBP " sap:VirtualizedContainerService.HintSize="450,1285" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[in_currency = &quot;GBP&quot;]" DisplayName="If currency is GBP " sap:VirtualizedContainerService.HintSize="450,1651" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -148,13 +166,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,523" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,706" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,183" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;GBP currency&quot;]" />
                   <uix:NSelectItem DisplayName="Select Item Country" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="United Kingdom" ScopeIdentifier="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Version="V3">
                     <uix:NSelectItem.Items>
                       <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -234,13 +253,14 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,584" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,767" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,183" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;EURO currency&quot;]" />
                   <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Select country" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="3e6fcda8-1f75-4651-9c68-120dc4bf69da" Text="FRANCE" Version="V3">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="https://www.lookfantastic.com/" CvElementArea="629, 499, 682, 64" CvType="InputBox" DesignTimeRectangle="632, 494, 678, 60" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='sessionSettings_shippingCountrySelect' aaname='' /&gt;" Guid="3ad9b6ad-981d-4f21-a8c7-f115f45782fe" ImageBase64="" InformativeScreenshot="90bd89f496fd73b2e158348d426b383d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LOOKFANTASTIC - Beauty, Fragrances, Skincare &amp;amp; Haircare' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
